@@ -62,20 +62,20 @@ print("Vamos a crear una jerarquía corporativa por roles.")
 empresa = crear_arbol(input("Ingrese el rol principal (ej: CEO): "))
 
 # Primer nivel
-insertar_izquierda(empresa, input("Ingrese el rol subordinado a la izquierda del CEO (ej: Directora de Finanzas): "))
-insertar_derecha(empresa, input("Ingrese el rol subordinado a la derecha del CEO (ej: CTO): "))
+insertar_izquierda(empresa, input(f"Ingrese el rol subordinado izquierdo del {empresa[0]}: "))
+insertar_derecha(empresa, input(f"Ingrese el rol subordinado derecho del {empresa[0]}: "))
 
-# Segundo nivel - Finanzas
-insertar_izquierda(empresa[1], input("Ingrese el rol subordinado izquierdo del rol de Finanzas (ej: Analista Contable): "))
-insertar_derecha(empresa[1], input("Ingrese el rol subordinado derecho del rol de Finanzas (ej: Responsable de Auditoría): "))
+# Segundo nivel
+insertar_izquierda(empresa[1], input(f"Ingrese el rol subordinado izquierdo del {empresa[1][0]}: "))
+insertar_derecha(empresa[1], input(f"Ingrese el rol subordinado derecho del {empresa[1][0]}: "))
 
-# Segundo nivel - Tecnología
-insertar_izquierda(empresa[2], input("Ingrese el rol subordinado izquierdo del CTO (ej: Líder Backend): "))
-insertar_derecha(empresa[2], input("Ingrese el rol subordinado derecho del CTO (ej: Líder Frontend): "))
+# Segundo nivel
+insertar_izquierda(empresa[2], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][0]}: "))
+insertar_derecha(empresa[2], input(f"Ingrese el rol subordinado derecho del {empresa[2][0]}: "))
 
-# Tercer nivel - Tecnología
-insertar_izquierda(empresa[2][1], input("Ingrese el rol subordinado del Líder Backend (ej: Backend Jr.): "))
-insertar_derecha(empresa[2][2], input("Ingrese el rol subordinado del Líder Frontend (ej: Frontend Jr.): "))
+# Tercer nivel 
+insertar_izquierda(empresa[2][1], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][1][0]}: "))
+insertar_derecha(empresa[2][2], input(f"Ingrese el rol subordinado derecho del {empresa[2][2][0]}: "))
 
 # Imprimir jerarquía rotada 90 grados
 print("Estructura organizacional (vista rotada 90°):")
