@@ -62,20 +62,20 @@ print("Vamos a crear una jerarquía corporativa por roles.")
 empresa = crear_arbol(input("Ingrese el rol principal (ej: CEO): "))
 
 # Primer nivel
-insertar_izquierda(empresa, input(f"Ingrese el rol subordinado izquierdo del {empresa[0]}: "))
-insertar_derecha(empresa, input(f"Ingrese el rol subordinado derecho del {empresa[0]}: "))
+insertar_izquierda(empresa, input(f"Ingrese el rol subordinado izquierdo del {empresa[0]} (ej: Directora de Finanzas): "))
+insertar_derecha(empresa, input(f"Ingrese el rol subordinado derecho del {empresa[0]} (ej: Director de Tecnologia (CTO)): "))
 
 # Segundo nivel
-insertar_izquierda(empresa[1], input(f"Ingrese el rol subordinado izquierdo del {empresa[1][0]}: "))
-insertar_derecha(empresa[1], input(f"Ingrese el rol subordinado derecho del {empresa[1][0]}: "))
+insertar_izquierda(empresa[1], input(f"Ingrese el rol subordinado izquierdo del {empresa[1][0]} (ej: Analista Contable): "))
+insertar_derecha(empresa[1], input(f"Ingrese el rol subordinado derecho del {empresa[1][0]} (ej: Responsable de Auditoria): "))
 
 # Segundo nivel
-insertar_izquierda(empresa[2], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][0]}: "))
-insertar_derecha(empresa[2], input(f"Ingrese el rol subordinado derecho del {empresa[2][0]}: "))
+insertar_izquierda(empresa[2], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][0]} (ej: Líder Backend): "))
+insertar_derecha(empresa[2], input(f"Ingrese el rol subordinado derecho del {empresa[2][0]} (ej: Líder Frontend): "))
 
 # Tercer nivel 
-insertar_izquierda(empresa[2][1], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][1][0]}: "))
-insertar_derecha(empresa[2][2], input(f"Ingrese el rol subordinado derecho del {empresa[2][2][0]}: "))
+insertar_izquierda(empresa[2][1], input(f"Ingrese el rol subordinado izquierdo del {empresa[2][1][0]} (ej: Backend Jr.): "))
+insertar_derecha(empresa[2][2], input(f"Ingrese el rol subordinado derecho del {empresa[2][2][0]} (ej: Frontend Jr.): "))
 
 # Imprimir jerarquía rotada 90 grados
 print("Estructura organizacional (vista rotada 90°):")
