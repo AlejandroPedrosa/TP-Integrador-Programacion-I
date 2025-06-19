@@ -57,24 +57,25 @@ def recorrido_postorden(arbol):
         print(arbol[0], end=' ')
 
 
-# Crear jerarquía corporativa pequeña
-empresa = crear_arbol("CEO")
+# Construcción interactiva del árbol de roles dentro de una empresa
+print("Vamos a crear una jerarquía corporativa por roles.")
+empresa = crear_arbol(input("Ingrese el rol principal (ej: CEO): "))
 
 # Primer nivel
-insertar_izquierda(empresa, "Directora de Finanzas")
-insertar_derecha(empresa, "CTO")
+insertar_izquierda(empresa, input("Ingrese el rol subordinado a la izquierda del CEO (ej: Directora de Finanzas): "))
+insertar_derecha(empresa, input("Ingrese el rol subordinado a la derecha del CEO (ej: CTO): "))
 
 # Segundo nivel - Finanzas
-insertar_izquierda(empresa[1], "Analista Contable")
-insertar_derecha(empresa[1], "Responsable de Auditoría")
+insertar_izquierda(empresa[1], input("Ingrese el rol subordinado izquierdo del rol de Finanzas (ej: Analista Contable): "))
+insertar_derecha(empresa[1], input("Ingrese el rol subordinado derecho del rol de Finanzas (ej: Responsable de Auditoría): "))
 
 # Segundo nivel - Tecnología
-insertar_izquierda(empresa[2], "Líder Backend")
-insertar_derecha(empresa[2], "Líder Frontend")
+insertar_izquierda(empresa[2], input("Ingrese el rol subordinado izquierdo del CTO (ej: Líder Backend): "))
+insertar_derecha(empresa[2], input("Ingrese el rol subordinado derecho del CTO (ej: Líder Frontend): "))
 
 # Tercer nivel - Tecnología
-insertar_izquierda(empresa[2][1], "Backend Jr.")
-insertar_derecha(empresa[2][2], "Frontend Jr.")
+insertar_izquierda(empresa[2][1], input("Ingrese el rol subordinado del Líder Backend (ej: Backend Jr.): "))
+insertar_derecha(empresa[2][2], input("Ingrese el rol subordinado del Líder Frontend (ej: Frontend Jr.): "))
 
 # Imprimir jerarquía rotada 90 grados
 print("Estructura organizacional (vista rotada 90°):")
