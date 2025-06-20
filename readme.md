@@ -1,8 +1,17 @@
 # Árbol Binario con Listas Anidadas en Python 
+# Tecnicatura en Programacion - Universidad Tecnologica Nacional - Programacion I 2025
+
+## Alumnos
+Pedrosa Alejandro (Comision 19)
+De La Rubia Luciano (Comision 7)
+
+## Profesores
+Cinthia Rigoni
+Nicolas Quiros
 
 ## 📌 Descripción
 
-En este trabajo integrador, se propone estudiar y aplicar una forma alternativa de implementación de árboles binarios en Python utilizando listas anidadas, en lugar de clases u objetos. Este enfoque permite comprender de forma accesible y didáctica los principios fundamentales de esta estructura. 
+En este trabajo integrador, se propone estudiar y aplicar una forma alternativa de implementación de árboles binarios en Python utilizando listas anidadas, en lugar de clases u objetos. Este enfoque permite comprender de forma accesible y didáctica los principios fundamentales de esta estructura. Se elaboro el programa realizando diferentes funciones que permiten crear el arbol binario y luego imprimirlo en pantalla junto a sus diferentes tipos de recorridos.
 
 ## Objetivos
 ### Objetivo general:
@@ -23,7 +32,7 @@ En este trabajo integrador, se propone estudiar y aplicar una forma alternativa 
 2. Ejecutar el archivo `Tp-integrador-programacion-Pedrosa_Alejandro-de_la_Rubia_Luciano.py`:
 
 ## Link al video de youtube
-https://youtu.be/-yvimayVo9g
+https://www.youtube.com/watch?v=R2bdv9lArZI
 
 ```bash
 python3 Tp-integrador-programacion-Pedrosa_Alejandro-de_la_Rubia_Luciano.py
